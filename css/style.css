@@ -1,0 +1,22 @@
+body {
+font-size: 30px;
+line-height: 0.8; 
+color: rgb(0, 0, 0);
+font-weight: normal;
+font-family: "Cuprum";
+}
+h1 {
+font-size: 27.532px;
+line-height: 1;
+color: rgb(255, 255, 255);
+font-weight: normal;
+font-family: "Cuprum";
+}
+h2 .popular-product {
+font-size: 30px;
+line-height: 1;
+color: rgb(61, 84, 110);  
+font-weight: normal;
+font-family: "Cuprum";
+}
+
