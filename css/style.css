@@ -1,22 +1,484 @@
 body {
-font-size: 30px;
-line-height: 0.8; 
-color: rgb(0, 0, 0);
-font-weight: normal;
-font-family: "Cuprum";
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Cuprum, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: none;
+  background-color: none;
+}
+a {
+  text-decoration: none;
+}
+.button {
+	font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #ff5357;
+  border: none;
 }
 h1 {
-font-size: 27.532px;
-line-height: 1;
-color: rgb(255, 255, 255);
-font-weight: normal;
-font-family: "Cuprum";
+	text-transform: uppercase;
+	background-color: #ff5357;
+	border-bottom: 5px solid #c23f42;		
 }
-h2 .popular-product {
-font-size: 30px;
-line-height: 1;
-color: rgb(61, 84, 110);  
-font-weight: normal;
-font-family: "Cuprum";
+h1 a:hover,
+h1 a:active {
+	background-color: #c23f42;
 }
+.second-navigation{
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #3d546e;	
+}
+.second-navigation li:nth-child(4) {
+	background-color: #63a63e;
+}
+.main-navigation {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #3d546e;	
+}
+.second-navigation a,
+.main-navigation a {
+	color: #ffffff;
+}
+.second-navigation a:hover,
+.site-navigaion a:hover {
+	background-color: #293449;
+}
+
+.second-navigation li,
+.main-navigation li {
+  list-style: none;
+}
+.description,
+.header-contacts,
+.user-navigation {
+	background-color: f3f7f8;
+}
+.description {
+	color: #ff5357;
+	text-align: left;
+	font-style: italic;
+}
+.numder {
+	border: 5px solid #ffffff;
+	font-size: 21px;
+	color: #ff5357;	
+	text-align: center;
+}
+/* Не отображается рамка */
+
+.adress {
+	font-size: 14px;
+	color: #3d546e;
+	text-align: center;
+}
+.user-navigation a {
+	color: #000000;
+	font-size: 21px;
+	background-color: #ffffff;
+}
+.user-navigation a:hover {
+	color: #ff5357;
+}	
+.user-navigation a:active {
+	color: #cacaca;
+}	
+
+.menu li {
+	list-style: none;
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;	
+}
+.menu a {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	background-color: #e5e5e5;
+}
+
+.menu a:hover {
+	background-color: #cccccc;
+}
+
+.menu a:focus {
+	background-color: #b2b2b2
+}
+
+.menu li:nth-child(1){
+	background-color: #ffbf47;
+}
+
+.menu li:nth-child(2){
+	background-color: #3bbce3;
+}
+.menu li:nth-child(3){
+	background-color: #dc91d8;
+}
+.menu li:nth-child(4){
+	background-color: #8ed78f;
+}
+.menu li:nth-child(5){
+	background-color: #ffc047;
+}
+
+/* доработать */
+.slider ul {
+  list-style: none;
+}
+
+.slider a:hover,
+.slider a:focus {
+	background-color: #ba2732;	
+}
+
+.popular-product,{
+	background-color: #f9f5f0;
+}
+.catalog-products li {
+	border: 1px solid #eaeaea;
+	list-style: none;
+}
+.catalog-product {
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+}
+.catalog-product a {
+	color: #000000;
+}
+
+.catalog-item-price {
+	text-align: center;
+}
+.catalog-item-price .old-price {
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: line-through;
+}
+
+ .catalog-item-price .button-price {
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	background-color: #ee3643;
+	color: #ffffff;
+}
+
+.catalog-list .button-basket {
+	font-size: 14px;
+	line-height: auto;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #63a63c;
+	border-bottom: 1px solid #367315;
+}
+
+.catalog-list .button-basket:hover {
+	background-color: #5fbb2d;
+}
+
+.catalog-list .button-basket:focus {
+	background-color: #518534;
+}
+
+.catalog-list .button-marker {
+	font-size: 14px;
+	line-height: auto;
+	text-transform: uppercase;
+	color: #000000;
+	border: 2px solid #63a63e;
+}
+
+.catalog-list .button-marker:hover {
+	border: 2px solid #32425c;
+}
+
+.producer h3 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #3d546e;
+	background-color: #f9f5f0;
+}
+
+.producer li {
+	list-style: none;
+	border: 1px solid #e4e4e4;
+	background-color: none;	
+}
+
+.info {
+	background-color: #f4f7f9;
+}
+
+.info-service,
+.company-technomart,
+.contacts-technomart,
+.title-info-puncher {
+	font-size: 30px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: left;
+}
+
+.info-service p, 
+.company-technomart p,
+.contacts-technomart p,
+.text-puncher p{
+	font-size: 13px;
+	line-height: 24px;
+	text-align: left;	
+}
+
+.info-menu ul {
+
+}
+.info-menu li {
+	list-style: none;
+	border-bottom: 1px solid #ffffff;
+	font-size: 21px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.info-menu .info-button {
+	background-color: #32425c;
+	color: #ffffff;
+}
+
+.info-delivery,
+.info-guarantee,
+.info-credit {
+	font-size: 36px;
+	line-height: 24px;
+	color: #3d546e;
+	font-weight: normal;	
+}
+
+.info-delivery p,
+.info-guarantee p,
+.info-credit p,
+.text-puncher {
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
+/* кнопка отправить */
+
+
+.partners-technomart li {
+	list-style: none;
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+}
+
+.write-us-form {
+	border-top: 5px solid #ff5358;
+}
+
+.write-us-form input[type="text"] 
+.write-us-form textarea[type="text"]{
+  font-size: 18px;
+  color: #000000;
+  background-color: ffffff;
+  border-top: 1px solid #dee3e4;
+}
+
+/* стиль для плейсхолдера */
+/* стиль для каталога */
+
+.name-user {
+	
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs a,
+.breadcrumbs-current {
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+  	color: #000000;
+}
+
+.page-title {
+	background-color: #f2f6f8;
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	border: none;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter li {
+  list-style: none;
+  line-height: 20px;
+}
+
+/* Полунок не выводит диапазон значений*/
+/* При выборе элемента фон маркера подсвечивается желтым*/
+
+.catalog-list li {
+	list-style: none;
+	
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a{
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #e5e5e5
+}
+
+.pagination-list a:focus {
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+.pagination-list a:hover{
+	border: 1px solid #bdc6ca;
+}
+
+.pagination-list a:active {
+	border: 1px solid #ee3643;
+}
+
+.pagination-item-current a {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+
+
+
+/* футер */
+
+.footer-main-contacts,
+.footer-main-navigation,
+.footer-second-navigation {
+	background-color: #32425c;
+}
+.copyright,
+.footer-social,
+.feedback {
+	background-color: #293449;
+}
+
+/* Кнопка техномарт */
+.footer-main-contacts .back-page-title {
+	background-color: #ee3643;
+	border-bottom: 2px solid #b52933;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+}
+
+.footer-contacts {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.footer-main-navigation li {
+	list-style: none;
+}
+
+.footer-main-navigation a {
+	font-size: 18px;
+	line-height: auto;
+	color: #ffffff;
+}
+.footer-second-navigation a {
+	font-size: 18px;
+	line-height: auto;
+	color: #ffd180;
+}
+
+.footer-main-navigation a:hover,
+.footer-second-navigation a:hover {
+	text-decoration: underline;
+}
+
+/*
+.footer-main-navigation a:active,
+.footer-second-navigation a:active {
+	
+}
+*/	
+
+.copyright {
+	font-size: 16px;
+	line-height: auto;
+	text-align: left;
+	color: #ffffff;
+}
+
+.feedback-creator-mail,
+.feedback-creator-site {
+	font-size: 16px;
+	line-height: auto;
+	color: #ffffff;
+}
+
+.feedback-creator-mail a,
+.feedback-creator-site a {
+	font-size: 16px;
+	line-height: auto;
+	color: #ffd180;
+	text-decoration: none;
+}
+
+.feedback-creator-mail a:hover,
+.feedback-creator-site a:hover {
+	text-decoration: underline;
+}
+
+.feedback-creator-mail a:active,
+.feedback-creator-site a:active {
+	color: #d13644;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
 
