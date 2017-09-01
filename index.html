@@ -10,31 +10,22 @@
    </head>
    <body>
       <header class="main-header">
+        <div class="top-header">
          <nav class="second-navigation">
+           <h1 class=""><a href="index.html">Техномарт</a></h1>
             <ul class="shop-navigaion">
                <li><a href="search.html"><img src="img/icon-search.svg" width="17" height="17"> Поиск</a></li>
                <li><a href="marker.html"><img src="img/icon-bookmark.svg" width="14" height="16">Закладки</a></li>
                <li><a href="basket.html"><img src="img/icon-cart.svg" width="15" height="15">Корзина</a></li>
                <li><a href="order.html">Оформить заказ</a></li>
-               <li><a href="special-offers.html">Спецпредложения</a></li>
             </ul>
          </nav>
-         <nav class="main-navigation">
-            <h1><a href="index.html">Техномарт</a></h1>
-            <ul class="site-navigaion">
-               <li class="site-navigation-current"><a href="main.html">Главная</a></li>
-               <li><a href="company.html">Компания</a></li>
-               <li><a href="catalog.html">Каталог</a></li>
-               <li><a href="news.html">Новости</a></li>
-               <li><a href="special-offers.html">Спецпредложения</a></li>
-               <li><a href="delivery.html">Доставка</a></li>
-               <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-         </nav>
+		 </div>
+        <div class="middle-header">
          <span class="description"> 
          Интернет-магазин<br>
          строительных материалов<br>
-         и интрументов для ремонта<br>
+         и инcтрументов для ремонта<br>
          </span>
          <div class="header-contacts">
             <p class="numder"><img src="img/icon-phone.svg" width="19" height="19">+ 7 (812) 555-05-55</p>
@@ -45,34 +36,41 @@
             <img src="img/icon-login.svg" width="20" height="17">Вход</a>
             <a class="registration-link" href="#">Регистрация</a>
          </div>
+         </div>
+         <div class="bottom-header">
+         <nav class="main-navigation">
+            <ul class="site-navigaion">
+               <li class="site-navigation-current"><a href="main.html">Главная</a></li>
+               <li><a href="company.html">Компания</a></li>
+               <li><a href="catalog.html">Каталог</a></li>
+               <li><a href="news.html">Новости</a></li>
+               <li><a href="special-offers.html">Спецпредложения</a></li>
+               <li><a href="delivery.html">Доставка</a></li>
+               <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+         </nav>
+         </div>
       </header>
       <main>
-         <section class="menu-button">
+         <section class="promo-top">
             <ul class="menu">
-               <li>Материалы<br>
-               <a class="button" href="#">На любой вкус</a>
-               <img src="img/icon-1.svg" width="44" height="65">
-               <span class="new">New</span>
-				</li>
-               <li>Инструмент<br>
+				<li><div class="promo-title">Материалы</div>
+                <a class="button" href="#">На любой вкус</a>
+                <img src="img/icon-1.svg" width="44" height="65">
+                </li>
+               <li><div class="promo-title">Инструмент</div>
                <a class="button" href="#">На все случаи</a>
                <img src="img/icon-2.svg" width="75" height="61">
                </li>
-               <li>Техника<br>
+			   <li><div class="promo-title">Техника</div>
                <a class="button" href="#">Для стройки</a>
                <img src="img/icon-3.svg" width="78" height="62">
                </li>
-               <li>Скидки 50%<br>
-               <a class="button" href="#">На 350 товаров</a>
-               <img src="img/icon-4.svg" width="59" height="72">
-               </li>
-               <li>Доставка<br>
-               <a class="button" href="#">Бесплатно</a>
-               <img src="img/icon-5.svg" width="78" height="63">
-               </li>
-            </ul>
-         </section>
-         <section class="slider">
+               </ul>
+		  </section>
+		  
+		  <section class="promo-main"> 
+		     <div class="slider">
             <ul>
                <li><img src="img/slider1.jpg" alt="Мужчина с перфоратором сверлит кирпичную стену"></li>
                <li><img src="img/slider2.jpg" alt="Мужчина с перфоратором сверлит бетонную стену"></li>
@@ -81,10 +79,23 @@
             <button class="left-link" type="button"><img src="img/icon-left.svg" width="22" height="40"></button>
             <button class="right-link" type="button"><img src="img/icon-right.svg" width="22" height="40"></button>
             <div class="slider-dots">
-               <span class="sleder-dot1"></span>
-               <span class="sleder-dot2"></span>
+               <span class="sleder-dot"></span>
+               <span class="sleder-dot"></span>
             </div>
+			  </div>
+           
+            <ul class="menu">
+			   <li><div class="promo-title">Скидки 50%</div>
+               <a class="button" href="#">На 350 товаров</a>
+               <img src="img/icon-4.svg" width="59" height="72">
+               </li>
+			   <li> <div class="promo-title">Доставка</div>
+               <a class="button" href="#">Бесплатно</a>
+               <img src="img/icon-5.svg" width="78" height="63">
+               </li>
+            </ul>
          </section>
+         
          <h2 class="popular-product">Популярные товары</h2>
          <a class="button" href="#">Все популярные товары</a>
          <ul class="catalog-list">
@@ -153,15 +164,15 @@
          <section class="producer">
             <h3>Популярные производители</h3>
             <a class="button" href="#">Все производители</a>
-            <ul>
-               <li class="producer-list"><a hef="#"><img src="img/logo-bosch.png" alt="Логотип Bosch" width="126" height="37"></a></li>
-               <li class="producer-list"><a hef="#"><img src="img/logo-makita.png" alt="Логотип Makita" width="123" height="40"></a></li>
-               <li class="producer-list"><a hef="#"><img src="img/logo-dewalt.png" alt="Логотип Sewalt" width="146" height="44"></a></li>
-               <li class="producer-list"><a hef="#"><img src="img/logo-interscol.png" alt="Логотип Интерскол" width="200" height="88"></a></li>
-               <li class="producer-list"><a hef="#"><img src="img/logo-hitachi.png" alt="Логотип Hitachi" width="169" height="31"></a></li>
-               <li class="producer-list"><a hef="#"><img src="img/logo-lg.png" alt="Логотип LG" width="121" height="73"></a></li>
-               <li class="producer-list"><a hef="#"><img src="img/logo-aeg.png" alt="Логотип AEG" width="151" height="96"></a></li>
-               <li class="producer-list"><a hef="#"><img src="img/logo-metabo.png" alt="Логотип Metabo" width="204" height="69"></a></li>
+            <ul class="producer-list">
+               <li><a href="#"><img src="img/logo-bosch.png" alt="Логотип Bosch" width="126" height="37"></a></li>
+               <li><a href="#"><img src="img/logo-makita.png" alt="Логотип Makita" width="123" height="40"></a></li>
+               <li><a href="#"><img src="img/logo-dewalt.png" alt="Логотип Sewalt" width="146" height="44"></a></li>
+               <li><a href="#"><img src="img/logo-interscol.png" alt="Логотип Интерскол" width="200" height="88"></a></li>
+               <li><a href="#"><img src="img/logo-hitachi.png" alt="Логотип Hitachi" width="169" height="31"></a></li>
+               <li><a href="#"><img src="img/logo-lg.png" alt="Логотип LG" width="121" height="73"></a></li>
+               <li><a href="#"><img src="img/logo-aeg.png" alt="Логотип AEG" width="151" height="96"></a></li>
+               <li><a href="#"><img src="img/logo-metabo.png" alt="Логотип Metabo" width="204" height="69"></a></li>
             </ul>
          </section>
          
@@ -222,6 +233,7 @@
                </div>
                <a class="button" href="company.html">Подробнее о компании</a>
             </article>
+            
             <article class="contacts-technomart">
                <p>Вы можете забрать товар сами,<br>
 				заехав в офис:</p><br>
@@ -250,14 +262,16 @@
             </article>
          </section>
       </main>
-      <footer>
+     
+         <footer>
+         <div class="footer-top">
          <div class="footer-main-contacts">
          <a class="back-page-title" href="index.html">Техномарт</a>
          <p class="footer-contacts">
             Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
             Телефон: + 7 (812) 555-05-55
 		   </p>
-		 </div>
+			 </div>
          <nav class="footer-main-navigation">
          <ul>
             <li><a href="main.html">Главная</a></li>
@@ -266,18 +280,22 @@
             <li><a href="news.html">Новости</a></li>
             <li><a href="contacts.html">Контакты</a></li>
          </ul>
+		</nav>
          <nav class="footer-second-navigation">
-            <ul class="technomart-product">
+            <ul>
                <li><a href="#">Материалы</a></li>
                <li><a href="#">Техника</a></li>
                <li><a href="#">Инструмент</a></li>
                <li><a href="#">Спецпредложения</a></li>
             </ul>
          </nav>
-         <p class="copyright">
+	     </div>
+       
+        <div class="footer-bottom">
+         <div class="copyright">
             	&#169; 2010–2017 Компания «Техномарт»<br>
             Все права защищены
-         </p>
+         </div>
          <div class="footer-social">
             <ul>
                <li><a class="social-button" href="#"><img src="img/icon-vk.svg" width="26" height="15">Вконтакте</a></li>
@@ -295,6 +313,7 @@
                <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
          </div>
+	</div>
       </footer>
    </body>
 </html>
