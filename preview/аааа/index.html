@@ -3,8 +3,8 @@
    <head>
       <meta charset="utf-8">
       <title>Техномарт Главная</title>
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="style.css">
       <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700i&amp;subset=cyrillic" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
    </head>
@@ -17,11 +17,11 @@
                      <li>
                         <h1 class="title-index"><a href="#">Техномарт</a></h1>
                      </li>
-                     <li class="search-icon"><input type="search" placeholder="Поиск"></li>
+                     <li class="search"><input type="search" placeholder="Поиск"></li>
                   </ul>
                   <ul class="shop-navigaion-right">
-                     <li><a class="bookmarks-icon" href="#">Закладки: 0</a></li>
-                     <li><a class="basket-icon" href="#">Корзина: 0</a></li>
+                     <li><a href="#">Закладки: 0</a></li>
+                     <li><a href="#">Корзина: 0</a></li>
                      <li><a class="make-order" href="#">Оформить заказ</a></li>
                   </ul>
                </nav>
@@ -40,7 +40,8 @@
                <p class="adress">г. Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
             </div>
             <div class="user-navigation">
-               <a class="login-link" href="#">Войти</a>
+               <a class="login-link" href="#">
+               <img src="img/icon-login.svg" width="20" height="17">Войти</a>
                <a class="registration-link" href="#">Регистрация</a>
             </div>
          </div>
@@ -118,6 +119,7 @@
                   <a class="button" href="#">Все популярные товары</a>
                </div>
                <div class="catalog-items">
+                  <div class="row">
                      <div class="catalog-item">
                         <div class="action"> 
                            <a class="basket" href="#">Купить</a> 
@@ -160,6 +162,7 @@
                         <div class="new-price">25500 P.</div>
                      </div>
                   </div>
+               </div>
             </section>
             <section class="producer">
                <div class="producer-title">
@@ -231,10 +234,10 @@
                <div class="info-wrap">
                   <article class="info-company-technomart">
                      <div class="company-technomart">
-                        <h5>Компания «Техномарт»</h5>
+                        <h5>Компания "Техномарт"</h5>
                         <p> Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-                        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-                        Техномарт работает со многими транспортными компаниями:</p>
+                        <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+                        <p>Техномарт работает со многими транспортными компаниями:</p>
                         <ul class="partners-technomart">
                            <li>Деловые линии</li>
                            <li>Автотрейдинг</li>
@@ -247,25 +250,19 @@
                      <div class="map-technomart">
                         <h5>Контакты:</h5>
                         <p>Вы можете забрать товар сами,<br>
-                           заехав в офис:</p>
+                           заехав в офис:
+                        </p>
+                        <br>
                         <div class="map-popup">
-                           <a class="map-small" href="#"><img src="img/map-small.jpg" width="300" height="158" alt="Офис компании Техномартпо адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
+                           <a href="#"><span class="map-small"><img src="img/map-small.jpg" width="300" height="158" alt="Офис компании Техномартпо адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></span></a>
+                           <span class="map-big"><img src="img/map-big.jpg" width="970" height="476" alt="Офис компании Техномартпо адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></span>
+                           <button class="map-exit" type="button"><img src="img/icon-exit.svg" width="21" height="21"></button>
                         </div>
-                        <div class="feedback-btn">
+                     </div>
+                     <div class="feedback-btn">
                         <a class="button" href="#">Заблудились? Напишите нам!</a>
                      </div>
-                     </div>
-				   </article>
-			 </div>
-		  </section>
-                      
-                    <div class="modal-index">
-                     <div class="map-big">
-                     	<img src="img/map-big.jpg" width="970" height="476" alt="Офис компании Техномартпо адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-                     </div>
-                     <section class="write-us">
                      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-                       <div class="write-us-top">
                         <p class="feedback-item">
                            <label for="write-us-item">Имя<br></label>
                            <input type="text" id="write-us-item" name="name" value="" placeholder="Представьтесь пожалуйста">
@@ -274,15 +271,16 @@
                            <label for="email-item">Ваш e-mail<br></label>
                            <input id="email-item" type="text" name="mail" value="" placeholder="Для отправки ответа">
                         </p>
-                        </div>
-                        <p class="feedback-item letter">
+                        <p class="feedback-item">
                            <label for="free-form">Текст письма<br></label>
                            <textarea name="text-letter" id="free-form" placeholder="В свободной форме"></textarea>
                         </p>
                         <button class="button" type="submit">Отправить</button>
                      </form>
-                     </section>
-			 </div>
+                  </article>
+               </div>
+            </div>
+         </section>
       </main>
       <footer>
          <div class="footer-top">
